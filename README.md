@@ -3,9 +3,17 @@ The project is explaining about the capston project of Hotel Booking analysis. h
 The data set was composed of over 119390 hotel bookings, each containing several variables such as 'hotel', 'is_canceled', 'lead_time', For this hotel booking analysis, the goal was to explore the customer data of a hotel and identify any potential trends or correlations. The purpose of this exploratory data analysis (EDA) was to explore the hotel booking data set and identify potential relationships between key variables. The data set included customer booking information. As part of the analysis, descriptive statistics were calculated for each variable, and visualizations were created to explore the relationships between various variables. To get insight from the'arrival_date_year', 'arrival_date_month', 'arrival_date_week_number', 'arrival_date_day_of_month', 'stays_in_weekend_nights', 'stays_in_week_nights', 'adults', 'children', 'babies', 'meal', 'country', 'market_segment', 'distribution_channel', 'is_repeated_guest', 'previous_cancellations', 'previous_bookings_not_canceled', 'reserved_room_type', 'assigned_room_type', 'booking_changes', 'deposit_type', 'agent', 'company', 'days_in_waiting_list', 'customer_type', 'adr', 'required_car_parking_spaces', 'total_of_special_requests', 'reservation_status', and 'reservation_status_date'.
 We faced some issues with the data when we were cleaning and analyzing it. There were a lot of duplicate values in the dataset. Null values were present in the dataset. Choosing the most effective visualization method is difficult. Performing feature engineering was more challenging.
 
-**Objective**
+
+
+# ****Objective****
+
+
 Our primary goal is to conduct EDA on the provided dataset and derive valuable conclusions about broad hotel booking trends and how various factors interact to affect hotel bookings.
-**Dataset**
+
+
+# **Dataset**
+
+
  We get a dataset of hotel reservations. A city hotel and a resort hotel's reservations are included in this dataset. It has the following features:
  - hotel: Name of hotel ( City or Resort)
  - is_canceled: Whether the booking is canceled or not (0 for no canceled and 1 for canceled)
@@ -42,7 +50,10 @@ Our primary goal is to conduct EDA on the provided dataset and derive valuable c
  - reservation_status_date: Date of making reservation status.
 Total 119390 rows and 32 columns in dataset
 
-**Data Cleaning and Feature Engineering**
+# **Data Cleaning and Feature Engineering**
+
+
+
  [1] Removing Duplicate Values
  - Rows that were duplicates were removed.
  [2] Handling Null / Missing Values
@@ -60,7 +71,10 @@ Total 119390 rows and 32 columns in dataset
  - From variables "children" and "babies," a new "total_children" variable is created by adding both of them.
  - The variable "total_people" used to create "guest_category."
  - The variable "lead_time_category" created from the variable "lead_time."
-**Exploratory Data Analysis**
+   
+# **Exploratory Data Analysis**
+
+
  performed EDA and tried answering the following questions:
  - 1] Is not having a reserved room assigned a reason for booking cancellations?
  - 2]  Is the high lead_time a reason for booking cancellations?
@@ -89,7 +103,9 @@ Total 119390 rows and 32 columns in dataset
  - Kdeplot
  - Heatmap
  - Pairplot
-**Univariate Analysis**
+   
+# **Univariate Analysis**
+
  performed univariate analysis and reached the following conclusions:
  - A city hotel was most preferred by 61.07 percent of customers over a resort.
  - 72.48% of bookings are not cancelled. Almost one-third of all reservations are canceled. 
@@ -106,7 +122,9 @@ Total 119390 rows and 32 columns in dataset
  - 70% chance that bookings will not be cancelled by customers.
  - Reserved rooms were not assigned to 15% of customers. Ensure that customers receive the rooms they have reserved.
  - Reservations were often made for two people. 10% or so of guests brought their families. Few bring their families with them. Offer family-friendly discounts to encourage reservations for family and business events.
-**Bivariate Analysis**
+   
+# **Bivariate Analysis**
+
  performed bivariate analysis and reached the following conclusions:
  - The inability to assign a reserved room to a customer is not grounds for cancellation
  - Less lead time means fewer cancellations. Booking cancellations are not caused by a longer Lead time.
@@ -125,7 +143,9 @@ Total 119390 rows and 32 columns in dataset
  - Agent nummber 9 made most number of bookings.
  - Longer waiting period is not a reason for booking cancellation.
  - People were consistently interested in booking rooms in advance in 2015, 2016, and 2017.
-**Conclusion**
+
+# **Conclusion**
+
  - The top country with the most number of bookings is PRT, and the number one agent with the most number of bookings is 9. 
  - Customers favored city hotels more than resort hotels by a margin of 61.07 percent.
  - One of the four reservations is canceled.
@@ -143,7 +163,9 @@ Total 119390 rows and 32 columns in dataset
  - A city hotel is busier than a resort.
  - The busiest months for hotels are October and September. There isn't a lengthy wait for reservations in July.
  - Not assigning a reserved room does not affect ADR.
-**Challenges**
+ - 
+# **Challenges**
+
  - The data contained a large number of duplicates.
  - The improper data type format was used for the data.
  - It was challenging to select the best visualization techniques.
